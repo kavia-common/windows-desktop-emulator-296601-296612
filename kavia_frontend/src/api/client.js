@@ -1,4 +1,7 @@
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:3001";
+const API_BASE_URL =
+  process.env.REACT_APP_API_BASE ||
+  process.env.REACT_APP_API_BASE_URL ||
+  "http://localhost:3001";
 
 /**
  * Low-level helper to perform a JSON HTTP request against the backend API.
